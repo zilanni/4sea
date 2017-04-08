@@ -1,0 +1,311 @@
+﻿@import "mixin.less";
+
+body, a, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+{
+    font-family:"微软雅黑";
+    color:@font-color;
+}
+
+h3{
+    font-size:@font-size-3;
+}
+
+h2{
+    font-size:@font-size-4;
+}
+
+body{
+    font-size:@font-size-1;
+}
+
+
+
+.header {
+    margin: 0;
+    padding: 20px 0 10px 0;
+
+    .container {
+
+        .logo {
+            float:left;
+            margin-top:0;
+            width:150px;
+        }
+
+        .top-nav {
+            float: right;
+            width:auto;
+            margin-top:20px;
+
+            .nav-container {
+                width:auto;
+                overflow:hidden;
+                float:left;
+
+                li{
+                    float:left;
+                    padding-left:50px;
+
+                    a{
+                        font-size:@font-size-3;
+                        
+                    }
+                }
+            }
+
+            .top-contact{
+                float:right;
+                padding-left:50px;
+                text-align:right;
+                font-size:@font-size-3;
+                color:red;
+            }
+        }
+    }
+}
+
+.footer{
+
+    background-color:#737373;
+    color:#dfdfdf;
+    padding:15px 0px 15px 0px;
+
+    .bottom-nav{
+        padding:0;
+        margin:0 0 0 20px;
+
+        .bottom-nav-container{
+            width:20%;
+            float:left;
+
+            ul{
+                -webkit-padding-start:0;
+
+                .bottom-nav-item{
+                    margin-top:15px;
+
+                    a{
+                        color:#dfdfdf;
+                        font-size:15px;
+                    }
+                }
+
+            }
+
+            .share-title{
+                margin-top:15px;
+            }
+
+            .footer-qr-wx{
+                width:130px;
+            }
+        }
+
+    }
+
+}
+
+.content-container{
+    background-color:@background-color;
+
+    .content{
+        background-color:#ffffff;
+    }
+}
+
+.region-title {
+    background-color: @main-color;
+    color: #ffffff;
+    height:50px;
+
+    h3{
+        float:left;
+        margin:0 10px;
+        font-size:@font-size-3;
+        color:#ffffff;
+        line-height:50px;
+    }
+}
+
+
+.btn-action{
+    background-color:@main-color;
+    color:#ffffff !important;
+    padding: 8px 15px;
+    font-size: @font-size-3;
+}
+
+.bfc{
+    overflow:hidden;
+}
+
+body, ul, li, ul > li {
+    margin: 0;
+    list-style: none;
+    -webkit-padding-start:0;
+}
+
+button {
+    font-family: 'Microsoft YaHei', 'SimHei', 'Microsoft JhengHei';
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+a {
+    color:@font-color;
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:link, &:visited, &:hover, &:active {
+        color: @font-color;
+        text-decoration: none;
+    }
+}
+
+.text-gray-light {
+    color: lighten(#000, 46.7%);
+}
+
+.text-ellipse {
+        overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.highlight{
+    color:@highlight
+}
+
+.goto-top{
+    z-index:99;
+    position:fixed;
+    bottom:50px;
+    right:10px;
+    width:52px;
+    height:109px;
+    background:url(img/gototop.jpg) no-repeat;
+
+    a{        
+        display:block;
+        width:100%;
+    }
+
+    .common-wx{
+        height:54px;
+    }
+
+    .goto-top-bt{
+        height:55px;
+    }
+}
+
+.float-qr-wx{
+    position:fixed;
+    bottom:105px;
+    right:62px;
+    z-index:99;
+    width:200px;
+    height:200px;
+    display:none;
+
+    img{
+        height:100%;
+        width:100%;
+    }
+}
+
+body{
+    min-width:980px;
+    min-height:100%;
+}
+
+.container{
+    min-width:1000px !important;
+}
+
+.icon-calculator-p{
+    display:inline-block;
+    padding-top:58px;
+    width:56px;
+    background:url(img/55x58.png) no-repeat -6*55-1px 0px;
+}
+
+.icon-calculator-e{
+    display:inline-block;
+    padding-top:58px;
+    width:56px;
+    background:url(img/55x58.png) no-repeat -8*55-3px 0px;
+}
+
+.icon-calculator-f{
+    display:inline-block;
+    padding-top:58px;
+    width:56px;
+    background:url(img/55x58.png) no-repeat -7*55-2px 0px;
+}
+
+.icon-calculator-c{
+    display:inline-block;
+    padding-top:58px;
+    width:56px;
+    background:url(img/55x58.png) no-repeat -5*55px 0px;
+}
+
+.icon-wyf{
+    display:inline-block;
+    padding-top:58px;
+    width:55px;
+    background:url(img/55x58.png) no-repeat -4*55px 0px;
+}
+
+.icon-wyc{
+    display:inline-block;
+    padding-top:58px;
+    width:55px;
+    background:url(img/55x58.png) no-repeat -3*55px 0px;
+}
+.icon-sbz{
+    display:inline-block;
+    padding-top:58px;
+    width:55px;
+    background:url(img/55x58.png) no-repeat -2*55px 0px;
+}
+.icon-qyz{
+    display:inline-block;
+    padding-top:58px;
+    width:55px;
+    background:url(img/55x58.png) no-repeat -1*55px 0px;
+}
+.icon-money{
+    display:inline-block;
+    padding-top:58px;
+    width:55px;
+    background:url(img/55x58.png) no-repeat 0px 0px;
+}
+
+.icon-xd{
+    display:inline-block;
+    padding-top:130px;
+    width:118px;
+    background:url(img/117x130.png) no-repeat 0px 0px;
+}
+
+.icon-fd{
+    display:inline-block;
+    padding-top:130px;
+    width:116px;
+    background:url(img/117x130.png) no-repeat -117*1-1px 0px;
+}
+
+.icon-cd{
+    display:inline-block;
+    padding-top:130px;
+    width:117px;
+    background:url(img/117x130.png) no-repeat -117*2px 0px;
+}

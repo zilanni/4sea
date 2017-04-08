@@ -1,0 +1,17 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section head{
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/error.css")" />
+}
+<div class="error-page">
+    <div class="content-container">
+        <section id="error404">
+            <h3>主页君迷路了~</h3>
+            <h4>可以撤退...</h4>
+            <div class="redirect">
+                <a href="javascript:history.go(-1)">返回上一页</a>
+            </div>
+        </section>
+    </div>
+</div>

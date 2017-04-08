@@ -1,0 +1,110 @@
+.content-container {
+    margin:0 auto;
+    padding:0;
+    max-width: 980px;
+    font-family:'Microsoft YaHei', 'SimHei', 'Microsoft JhengHei';
+}
+.content-container:after {
+    clear:both
+}
+.sys-content {
+    background-color: #fff;
+}
+.error-page {
+    float: left;
+    width: 100%;
+    height: auto;
+    background-color: inherit;
+}
+
+    .error-page:after {
+        clear: both;
+    }
+
+section {
+   width: 780px;
+    height: 350px;
+    margin: 25px auto;
+    text-align: left;
+    padding: 30px 50px;
+}
+
+
+    section h3 {
+       margin: 0;
+        width: 100%;
+        line-height: 35px;
+        font-size: 25px;
+    }
+
+    section h4 {
+       margin: 0;
+        padding: 0 50px;
+        width: 100%;
+        line-height: 30px;
+        font-size: 18px;
+        color: #7c7e7f;
+    }
+
+    section .redirect {
+           padding: 0 50px;
+        line-height: 14px;
+    }
+
+        section .redirect a {
+            margin: 0 6px;
+            color: #8ab800;
+        }
+
+#error500 {
+     background: url(img/error500.png) no-repeat 0 0;
+    margin: 55px auto;
+    padding: 100px 150px;
+    text-align: right;
+}
+
+    #error500 h4 {
+        padding: 0;
+    }
+
+    #error500 .redirect {
+        padding: 0;
+    }
+#error403 {
+    background: url(img/error403.png) no-repeat 0 0;
+     margin: 35px auto;
+    text-align: left;
+}
+    #error403 h3 {
+        margin: 30px 0 0;
+        padding: 0 20px;
+            font-family:'Microsoft YaHei', 'SimHei', 'Microsoft JhengHei';
+    }
+
+    #error403 h4 {
+        margin:0;
+        padding: 0 60px;
+            font-family:'Microsoft YaHei', 'SimHei', 'Microsoft JhengHei';
+    }
+
+    #error403 .redirect {
+        margin:0;
+        padding: 0 60px;
+    }
+#error404 {
+    background: url(img/error404.png) no-repeat 0 0;
+    background-position-y: 40px;
+}
+    #error404 h3 {
+        padding: 0 50px;
+          font-family:'Microsoft YaHei', 'SimHei', 'Microsoft JhengHei';
+    }
+
+    #error404 h4 {
+        padding: 0 120px;
+          font-family:'Microsoft YaHei', 'SimHei', 'Microsoft JhengHei';
+    }
+
+    #error404 .redirect {
+        padding: 0 120px;
+    }

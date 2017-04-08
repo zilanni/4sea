@@ -1,0 +1,18 @@
+﻿@{
+    Layout = "~/Views/Shared/_EmptyLayout.cshtml";
+}
+@section head
+{
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/error.css")" />
+}
+<div class="error-page">
+    <div class="content-container">
+        <section id="error500">
+            <h3>主页君在开小差~</h3>
+            <h4>打个盹就回来...</h4>
+            <div class="redirect">
+                <a href="javascript:history.go(-1)">返回上一页</a>
+            </div>
+        </section>
+    </div>
+</div>
